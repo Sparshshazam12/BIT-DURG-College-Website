@@ -1,0 +1,363 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 15px ;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f00;
+}
+
+/* Section Styles */
+.section {
+    background-color: #fff0f0;
+    padding: 40px;
+    margin: 20px 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-image {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 70vh; 
+}
+
+.hero-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 4s infinite;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero-content {
+    position: relative;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 200px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+/* Connect Button Styles */
+.connect-button {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+    background-color: black;
+}
+
+/* Subscription Form Styles */
+.subscription-form {
+    text-align: right;
+    flex: 1;
+    margin-top: 5px;
+}
+
+.subscription-form h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.subscription-form form {
+    display: inline;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.subscription-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscription-form button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #c00;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Footer Links Styles */
+.footer-links {
+    margin-bottom: 10px;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Site Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 10px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Album Styles for Elements with Class "section" */
+.album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.album-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.album-item img {
+    max-width: 100%;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.album-item .section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.album-item h1 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.album-item p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Keyframes */
+@keyframes fade {
+    0% { opacity: 0.3; }
+    33.33% { opacity: 0.6; }
+    66.67% { opacity: 0.8; }
+    100% { opacity: 1.0; }
+}
+/* Style the navigation links as inline-block elements */
+
+/* Style the anchor tags (links) */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect */
+.nav-links a:hover {
+    color: #f00; /* Change the color on hover as needed */
+}
